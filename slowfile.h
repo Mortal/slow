@@ -10,7 +10,7 @@ public:
 	inline buffer(): current_block_size(0), m_index(0) {
 	}
 
-	static inline int64_t max(int64_t x, int64_t y) {
+	static inline size_t max(size_t x, size_t y) {
 		return x-(((x-y)>>63)&(x-y));
 	}
 
